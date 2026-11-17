@@ -29,3 +29,5 @@ jobs:
           test -f _site/en/index.html
           test -f _site/fr/index.html
           test -f _site/feed.xml
+          test -f _site/404.html
+          test ! -e _site/README.md
