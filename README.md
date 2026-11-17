@@ -1,32 +1,39 @@
-# AI for Official Statistics — Independent bilingual blog
+# AI for Official Statistics
 
-**Planned publication address:** https://bakodramane.github.io/ai-official-statistics/
+**A bilingual, independent knowledge hub on AI for surveys, censuses, administrative data and official statistics, by Dramane Bako.**
 
-This source branch prepares a separate GitHub Pages project site for [Dramane Bako](https://bakodramane.github.io/). It contains the full original bilingual AI article archive, Weekly Monitor, methodological knowledge hub, resources, topic pages and RSS feed. The professional portfolio remains at the root site.
+- **Blog URL (after GitHub Pages activation):** https://bakodramane.github.io/ai-official-statistics/
+- **English homepage:** https://bakodramane.github.io/ai-official-statistics/
+- **French homepage:** https://bakodramane.github.io/ai-official-statistics/fr/accueil/
+- **English articles:** /en/ · **French articles:** /fr/
+- **RSS feed:** /feed.xml
+- **Professional portfolio:** https://bakodramane.github.io/
 
-**Repository target:** `bakodramane/ai-official-statistics` (requires creation in GitHub before deployment).
+This repository contains the complete historical bilingual AI blog from the professional website, including 125 post-source files and the Jekyll knowledge hub. The original post permalinks and translation metadata have been preserved. The content and site source were transferred with exact Git blob SHA matches.
 
-## Deployment
+## Enable GitHub Pages (one-time)
 
-1. Create a **public empty repository** named `ai-official-statistics` in the same GitHub account.
-2. Push this branch's **files** to that repository's `main` branch. If creating a clean-history repository, use the instructions in the migration PR rather than merging this branch into the portfolio.
-3. In the new repository: Settings → Pages → Deploy from a branch → `main` / `/(root)`.
-4. Confirm the blog at `https://bakodramane.github.io/ai-official-statistics/`.
-5. Validate EN/FR URLs, article translation switches, RSS and archives before redirecting the original site.
-6. Update the scheduled bilingual blog publishing task's repository and branch target to the new `ai-official-statistics` repository.
+Go to this repository's **Settings → Pages → Build and deployment** and choose **Deploy from a branch**, with **Branch: main** and **Folder: /(root)**. Save. The public site can then be verified at the blog URL above.
 
-`_config.yml` uses `url: https://bakodramane.github.io` and `baseurl: /ai-official-statistics`. Keep this when using the default GitHub Pages project URL; change both only when a custom domain is actually configured.
+The source is built with Jekyll and GitHub Pages, using `url: https://bakodramane.github.io` and `baseurl: /ai-official-statistics` in `_config.yml`.
 
-## Local validation
+## Development and validation
 
 ```bash
 bundle install
+bundle exec jekyll serve
 bundle exec jekyll build
 python3 scripts/check_site_links.py _site --baseurl /ai-official-statistics
 ```
 
-## Publishing compatibility
+GitHub Actions runs the build, project-baseurl link checker and EN/FR archive and RSS checks on updates to `main` and on pull requests.
 
-Keep paired `translation_key`, `lang` and French `/fr/` permalinks on all posts. Existing weekly content format and source citation conventions are preserved. The website may not be live until the new repository is created and Pages enabled.
+## Editorial workflow
 
-All statements and commentary are personal, not institutional.
+The existing ChatGPT weekly bilingual AI update automation has been retargeted to this repository. It remains scheduled for Mondays at 09:00 Europe/Rome and prepares an English/French pair in a review branch without merging or publishing the posts directly. Preserve the `translation_key`, `lang`, French permalinks and source-quality controls.
+
+## Portfolio migration dependency
+
+The professional portfolio cutover is staged separately in [PR #33](https://github.com/bakodramane/bakodramane.github.io/pull/33). **Only merge PR #33 after this blog URL and RSS are live**, to avoid forwarding old public article URLs to an unpublished site.
+
+The blog expresses personal views and does not represent FAO or any other institution.
