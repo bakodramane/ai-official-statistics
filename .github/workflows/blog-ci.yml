@@ -2,9 +2,7 @@ name: AI blog — build and link checks
 
 on:
   push:
-    branches:
-      - main
-      - ai-blog-standalone-2026-11-17
+    branches: [main]
   pull_request:
 
 permissions:
@@ -31,3 +29,5 @@ jobs:
           test -f _site/en/index.html
           test -f _site/fr/index.html
           test -f _site/feed.xml
+          test -f _site/404.html
+          test ! -e _site/README.md

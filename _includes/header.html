@@ -32,7 +32,7 @@
           <a class="language-switch__link{% if page.lang != 'fr' %} is-active{% endif %}" href="{{ english_url | relative_url }}" hreflang="en" lang="en">EN</a>
           <a class="language-switch__link{% if page.lang == 'fr' %} is-active{% endif %}" href="{{ french_url | relative_url }}" hreflang="fr" lang="fr">FR</a>
         </span>
-        <a class="page-link blog-return" href="https://bakodramane.github.io/">{% if page.lang == "fr" %}Site professionnel ↗{% else %}Professional website ↗{% endif %}</a>
+        <a class="page-link blog-return" href="https://bakodramane.github.io/">{% if page.lang == "fr" %}Site professionnel{% else %}Portfolio{% endif %} <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
   </div>

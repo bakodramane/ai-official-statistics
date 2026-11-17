@@ -30,10 +30,12 @@ GitHub Actions runs the build, project-baseurl link checker and EN/FR archive an
 
 ## Editorial workflow
 
+Post conventions (front matter, translation pairs, tags, sources, tone) are in [docs/content-guidelines.md](docs/content-guidelines.md).
+
 The existing ChatGPT weekly bilingual AI update automation has been retargeted to this repository. It remains scheduled for Mondays at 09:00 Europe/Rome and prepares an English/French pair in a review branch without merging or publishing the posts directly. Preserve the `translation_key`, `lang`, French permalinks and source-quality controls.
 
 ## Portfolio migration dependency
 
-The professional portfolio cutover is staged separately in [PR #33](https://github.com/bakodramane/bakodramane.github.io/pull/33). **Only merge PR #33 after this blog URL and RSS are live**, to avoid forwarding old public article URLs to an unpublished site.
+The professional portfolio cutover is staged separately in [PR #34](https://github.com/bakodramane/bakodramane.github.io/pull/34). **Only merge PR #34 after this blog URL and RSS are live**, to avoid forwarding old public article URLs to an unpublished site.
 
 The blog expresses personal views and does not represent FAO or any other institution.

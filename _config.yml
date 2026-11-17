@@ -44,6 +44,8 @@ defaults:
       tags: [AI, surveys, official-statistics, administrative-data]
       lang: en
 exclude:
+  - README.md
+  - LICENSE
   - Gemfile
   - Gemfile.lock
   - node_modules
