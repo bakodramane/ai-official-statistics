@@ -1,0 +1,52 @@
+title: "AI for Official Statistics | Dramane Bako"
+tagline: "Evidence-led AI insights for statistical systems"
+description: "A bilingual independent knowledge hub on responsible AI tools, methods and governance for surveys, censuses, administrative data and official statistics."
+url: "https://bakodramane.github.io"
+baseurl: "/ai-official-statistics"
+theme: minima
+author:
+  name: "Dramane Bako"
+  email:
+  url: "https://bakodramane.github.io/"
+twitter:
+  username:
+  card: summary_large_image
+social:
+  name: "Dramane Bako"
+  links:
+    - "https://bakodramane.github.io/"
+    - "https://www.linkedin.com/in/bakodramane/"
+    - "https://github.com/bakodramane"
+logo: "https://bakodramane.github.io/ai-official-statistics/assets/img/social-preview.png"
+image: "https://bakodramane.github.io/ai-official-statistics/assets/img/social-preview.png"
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+header_pages:
+  - weekly-monitor.md
+  - knowledge-hub.md
+  - topics.md
+  - methods.md
+  - resources.md
+  - archive.md
+  - about.md
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      author: "Dramane Bako"
+      categories: [AI, Survey Research, Weekly Update]
+      tags: [AI, surveys, official-statistics, administrative-data]
+      lang: en
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - docs
+  - scripts
