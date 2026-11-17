@@ -6,8 +6,6 @@ en:
   - label: Knowledge Hub
     url: /knowledge-hub/
     match: [/knowledge-hub/, /topics/, /methods/, /use-cases/, /tools/, /resources/]
-  - label: Topics
-    url: /topics/
   - label: Archive
     url: /archive/
     match: [/en/, /fr/]
@@ -23,8 +21,6 @@ fr:
   - label: Ressources
     url: /knowledge-hub-fr/
     match: [/knowledge-hub-fr/, /topics-fr/, /methods-fr/, /use-cases-fr/, /tools-fr/, /resources-fr/]
-  - label: Thèmes
-    url: /topics-fr/
   - label: Archives
     url: /archive/
   - label: À propos

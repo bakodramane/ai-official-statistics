@@ -1,0 +1,19 @@
+---
+layout: default
+title: "Page not found"
+permalink: /404.html
+sitemap: false
+lang: en
+---
+<section class="not-found" aria-labelledby="not-found-title">
+  <p class="eyebrow">404</p>
+  <h1 id="not-found-title">Page not found</h1>
+  <p class="page-lede">The page you were looking for has moved or no longer exists. Every article is listed in the archive.</p>
+  <p><a class="button button--primary" href="{{ '/archive/' | relative_url }}">Search the archive</a> <a class="button" href="{{ '/' | relative_url }}">Blog homepage</a></p>
+  <hr>
+  <div lang="fr">
+    <h2>Page introuvable</h2>
+    <p>La page demandée a été déplacée ou n'existe plus. Tous les articles figurent dans les archives.</p>
+    <p><a class="button" href="{{ '/archive/' | relative_url }}">Parcourir les archives</a> <a class="button" href="{{ '/fr/accueil/' | relative_url }}">Accueil du blog</a></p>
+  </div>
+</section>

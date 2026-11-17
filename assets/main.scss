@@ -1754,3 +1754,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .blog-hero { grid-template-columns: 1fr; }
   .blog-hero .hero__panel { margin-top: 18px; }
 }
+
+/* Keep top-bar labels on one line */
+@media (min-width: 901px) {
+  .site-nav .page-link { white-space: nowrap; }
+}
+.not-found hr { margin: 32px 0 24px; border: 0; border-top: 1px solid var(--line); }

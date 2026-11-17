@@ -2,9 +2,7 @@ name: AI blog — build and link checks
 
 on:
   push:
-    branches:
-      - main
-      - ai-blog-standalone-2026-11-17
+    branches: [main]
   pull_request:
 
 permissions:

@@ -11,16 +11,21 @@
       {% endif %}
     </div>
     <nav class="footer-nav" aria-label="{% if page.lang == 'fr' %}Liens du blog{% else %}Blog links{% endif %}">
-      <a href="{{ '/' | relative_url }}">{% if page.lang == 'fr' %}Accueil{% else %}Home{% endif %}</a>
-      <a href="{{ '/weekly-monitor/' | relative_url }}">{% if page.lang == 'fr' %}Veille hebdomadaire{% else %}Weekly Monitor{% endif %}</a>
-      <a href="{{ '/knowledge-hub/' | relative_url }}">Knowledge Hub</a>
+      <a href="{% if page.lang == 'fr' %}{{ '/fr/accueil/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{% if page.lang == 'fr' %}Accueil{% else %}Home{% endif %}</a>
+      {% if page.lang == 'fr' %}
+        <a href="{{ '/fr/' | relative_url }}">Veille hebdomadaire</a>
+        <a href="{{ '/knowledge-hub-fr/' | relative_url }}">Hub de connaissances</a>
+      {% else %}
+        <a href="{{ '/weekly-monitor/' | relative_url }}">Weekly Monitor</a>
+        <a href="{{ '/knowledge-hub/' | relative_url }}">Knowledge Hub</a>
+      {% endif %}
       <a href="{{ '/archive/' | relative_url }}">{% if page.lang == 'fr' %}Archives{% else %}Archive{% endif %}</a>
       <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
-      <a href="https://bakodramane.github.io/">{% if page.lang == 'fr' %}Site professionnel{% else %}Professional portfolio{% endif %} ↗</a>
+      <a href="{% if page.lang == 'fr' %}https://bakodramane.github.io/fr/accueil/{% else %}https://bakodramane.github.io/{% endif %}">{% if page.lang == 'fr' %}Site professionnel{% else %}Professional portfolio{% endif %} ↗</a>
     </nav>
     <div class="footer-social">
       <p class="footer-subheading">{% if page.lang == 'fr' %}Auteur{% else %}Author{% endif %}</p>
-      <a href="https://bakodramane.github.io/about/">{% if page.lang == 'fr' %}Profil de Dramane Bako{% else %}Dramane Bako profile{% endif %} ↗</a>
+      <a href="{% if page.lang == 'fr' %}https://bakodramane.github.io/about-fr/{% else %}https://bakodramane.github.io/about/{% endif %}">{% if page.lang == 'fr' %}Profil de Dramane Bako{% else %}Dramane Bako profile{% endif %} ↗</a>
       <a href="https://www.linkedin.com/in/bakodramane/">LinkedIn ↗</a>
       <a href="https://github.com/bakodramane">GitHub ↗</a>
     </div>
